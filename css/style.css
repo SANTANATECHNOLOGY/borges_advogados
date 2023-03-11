@@ -35,6 +35,39 @@ section {
     min-height: 100vh;
     padding: 10rem 9% 1rem;
 }
+.icon_wpp{
+    display: block;
+    position: fixed;
+    float: right;
+    z-index: 1000;
+
+}
+.icon_wpp i{
+    font-size: 8rem;
+    color: var(--text-bg-color);
+    left: 90%;
+    top: 80%;
+    width: 100vh;
+    position: fixed;
+    width: 8rem;background-color: var(--main-bg-color);
+    border-radius: 50%;
+    box-shadow: 0 0 2rem var(--main-bg-color);
+    animation: floatIcon 4s ease-in-out infinite;
+}
+@keyframes floatIcon {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.0rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.icon_wpp i:hover{
+    box-shadow:none;
+}
 
 .header {
     position: fixed;
@@ -419,6 +452,9 @@ span {
 }
 
 @media (max-width: 625px) {
+    .icon_wpp i{
+        left: 80%;
+    }
     #menu_icon {
         display: block;
         cursor: pointer;
