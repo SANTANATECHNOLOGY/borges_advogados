@@ -527,6 +527,12 @@ span {
     .contato form .btn{
         margin-left: 25%;
     }
+    .icon_wpp i{
+        left: 72%;
+    }
+    #menu_icon {
+        margin-right: 20%;
+    }
 }
 @media (max-width: 395px){
     #menu_icon {
